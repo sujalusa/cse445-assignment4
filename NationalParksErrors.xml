@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NationalPark>
+	<!-- Error 1: Root element should be NationalParks, but it is NationalPark -->
+
+	<!-- Error 2: Missing required attribute NearestAirport -->
+	<NationalPark Rating="4.9">
+		<Name>Grand Canyon</Name>
+		<Phone>928-638-7496</Phone>
+		<Phone>888-297-2757</Phone>
+		<Phone>866-499-2574</Phone>
+		<Address>
+			<Number>8</Number>
+			<Street>S Entrance Road</Street>
+			<City>Grand Canyon</City>
+			<State>AZ</State>
+			<Zip>86023</Zip>
+		</Address>
+	</NationalPark>
+
+	<NationalPark Rating="4.8" NearestAirport="Bozeman Yellowstone International">
+		<Name>Yellowstone</Name>
+		<Phone>307-344-7381</Phone>
+		<Phone>307-344-7311</Phone>
+		<Address>
+			<Number>2</Number>
+			<Street>Off Grand Loop Road</Street>
+			<City>Yellowstone National Park</City>
+			<State>WY</State>
+			<Zip>82190</Zip>
+		</Address>
+	</NationalPark>
+
+	<!-- Error 3: Missing Phone element -->
+	<NationalPark NearestAirport="Fresno Yosemite International">
+		<Name>Yosemite</Name>
+		<Address>
+			<Number>9035</Number>
+			<Street>Village Drive</Street>
+			<City>Yosemite Valley</City>
+			<State>CA</State>
+			<Zip>95389</Zip>
+		</Address>
+	</NationalPark>
+
+	<!-- Error 5: Two Name elements -->
+	<NationalPark Rating="4.7" NearestAirport="Harry Reid International">
+		<Name>Zion</Name>
+		<Name>Zion Duplicate</Name>
+		<Phone>435-772-3256</Phone>
+		<Address>
+			<Number>1</Number>
+			<Street>Zion Park Boulevard</Street>
+			<City>Springdale</City>
+			<State>UT</State>
+			<Zip>84767</Zip>
+		</Address>
+	</NationalPark>
+
+	<!-- Error 4: Address element has no closing tag -->
+	<NationalPark NearestAirport="Cedar City Regional">
+		<Name>Bryce Canyon</Name>
+		<Phone>435-834-5322</Phone>
+		<Address>
+			<Number>1</Number>
+			<Street>Bryce Canyon Scenic Drive</Street>
+			<City>Bryce</City>
+			<State>UT</State>
+			<Zip>84764</Zip>
+		</NationalPark>
+</NationalPark>
