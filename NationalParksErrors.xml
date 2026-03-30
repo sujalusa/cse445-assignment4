@@ -1,5 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<NationalPark>
+<?xml version="1.0" encoding="utf-8"?>
+<NationalPark
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="https://sujalusa.github.io/cse445-assignment4/NationalParks.xsd">
 	<!-- Error 1: Root element should be NationalParks, but it is NationalPark -->
 
 	<!-- Error 2: Missing required attribute NearestAirport -->
