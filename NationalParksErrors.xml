@@ -19,11 +19,11 @@
 		</Address>
 	</NationalPark>
 
-	<NationalPark Rating="4.8" NearestAirport="Bozeman Yellowstone International">
+	<NationalPark Rating="4.8">
 		<Name>Yellowstone</Name>
 		<Phone>307-344-7381</Phone>
 		<Phone>307-344-7311</Phone>
-		<Address>
+		<Address NearestAirport="Bozeman Yellowstone International">
 			<Number>2</Number>
 			<Street>Off Grand Loop Road</Street>
 			<City>Yellowstone National Park</City>
@@ -33,9 +33,9 @@
 	</NationalPark>
 
 	<!-- Error 3: Missing Phone element -->
-	<NationalPark NearestAirport="Fresno Yosemite International">
+	<NationalPark>
 		<Name>Yosemite</Name>
-		<Address>
+		<Address NearestAirport="Fresno Yosemite International">
 			<Number>9035</Number>
 			<Street>Village Drive</Street>
 			<City>Yosemite Valley</City>
@@ -45,11 +45,11 @@
 	</NationalPark>
 
 	<!-- Error 5: Two Name elements -->
-	<NationalPark Rating="4.7" NearestAirport="Harry Reid International">
+	<NationalPark Rating="4.7">
 		<Name>Zion</Name>
 		<Name>Zion Duplicate</Name>
 		<Phone>435-772-3256</Phone>
-		<Address>
+		<Address NearestAirport="Harry Reid International">
 			<Number>1</Number>
 			<Street>Zion Park Boulevard</Street>
 			<City>Springdale</City>
@@ -59,10 +59,10 @@
 	</NationalPark>
 
 	<!-- Error 4: Address element has no closing tag -->
-	<NationalPark NearestAirport="Cedar City Regional">
+	<NationalPark>
 		<Name>Bryce Canyon</Name>
 		<Phone>435-834-5322</Phone>
-		<Address>
+		<Address NearestAirport="Cedar City Regional">
 			<Number>1</Number>
 			<Street>Bryce Canyon Scenic Drive</Street>
 			<City>Bryce</City>
